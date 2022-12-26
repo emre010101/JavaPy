@@ -1,3 +1,4 @@
+'''This project designed to divide the project between each team members'''
 import random 
 
 website = ['home', 'about', 'eligibity', 'visa', 'GInfo', 'employment', 'salary', 'contact']
