@@ -1,15 +1,16 @@
+'''this program designed to keep track of your own work schedule and calculation of the vage'''
 from datetime import datetime
 from pathlib import Path
-Path = Path(r'C:\Users\emrek\OneDrive\Desktop\General\dropchef\money.txt')
+Path = Path(r'Path to file')
 
 def newweek():
-    f = open(r'C:\Users\emrek\OneDrive\Desktop\General\dropchef\money.txt', 'a+')
+    f = open(r'Path to file', 'a+')
     f.write("\n--------+++++NEW WEEK+++++-----------")
     f.close()
     
                    
 def takenote():
-    f = open(r'C:\Users\emrek\OneDrive\Desktop\General\dropchef\money.txt', 'a+')
+    f = open(r'Path to file', 'a+')
     f.write("\n--------------------------------")
     f.write(f"\nThe date of the work: {date}")
     f.write(f"\nStart time: {t1.time()}")
@@ -20,7 +21,7 @@ def takenote():
     f.close()
     
 def takenote2():
-    f = open(r'C:\Users\emrek\OneDrive\Desktop\General\dropchef\money.txt', 'w')
+    f = open(r'Path to file', 'w')
     f.write("\n--------------------------------")
     f.write(f"\nThe date of the work: {date}")
     f.write(f"\nStart time: {t1.time()}")
@@ -79,7 +80,7 @@ while(True):
     hour=total_minutes/60                  
     print("The total work hour: ", hour)
                        
-    earning = hour * 11.20                  
+    earning = hour * (vage)                  
     print("£££", earning)
     if Path.is_file():
         takenote()
